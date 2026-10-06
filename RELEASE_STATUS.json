@@ -6,8 +6,11 @@
   "version": "2.0.0",
   "publication_date": "2026-10-06",
   "file_count": 11,
-  "total_size_bytes": 6281678424,
+  "total_size_bytes": 6274686946,
   "anonymous_access_verified": "2026-10-06",
-  "checksum_verification": "All 11 published file sizes and MD5 checksums match the release; complete small-file downloads and ZIP byte-range downloads verified without authentication.",
-  "scientific_runs_executed_for_publication_sync": 0
+  "checksum_verification": "All 11 published file sizes and MD5 checksums verified; corrected small files downloaded byte-for-byte; research archive directory, member manifest and public client verified by anonymous byte-range reads.",
+  "scientific_runs_executed_for_publication_sync": 0,
+  "code_client": "data_preparation/vt_single_key.py",
+  "code_client_tests_passed": 17,
+  "code_correction_verified": "2026-10-06"
 }

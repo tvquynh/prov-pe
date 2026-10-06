@@ -8,7 +8,7 @@ Minh Thang Nguyen. Contact: thuaht@ptit.edu.vn.
 ## Current release status
 
 Code is public in this repository. PROV-PE version 2.0.0 was published on
-6 October 2026 with all 11 release files (6.28 GB):
+6 October 2026 with all 11 release files (6.27 GB):
 [download the dataset and research artifacts on Zenodo](https://doi.org/10.5281/zenodo.23157392).
 Public file access and release checksums have been verified; see RELEASE_STATUS.json.
 
