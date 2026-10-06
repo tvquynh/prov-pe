@@ -62,17 +62,7 @@ in the configurations. Original absolute execution paths in provenance are
 historical identifiers, not portable defaults. No training, bootstrap,
 new VT request or scientific-result computation was run for this release.
 
-## Optional report retrieval
 
-For future retrieval of existing VirusTotal reports, use
-[`data_preparation/vt_single_key.py`](data_preparation/vt_single_key.py).
-It accepts one API key, sends requests sequentially, preserves quota state
-across restarts and stops on HTTP 429. See the
-[client instructions](data_preparation/VT_CLIENT_README.md) for limits and
-offline tests. This optional client was not used to acquire the published
-dataset. Reproduction uses the frozen metadata and saved outputs; it does
-not require new API requests. Historical verification receipts describe
-their original snapshots and may identify files not distributed here.
 
 ## Licensing
 
