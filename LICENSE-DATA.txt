@@ -1,0 +1,9 @@
+Data license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Applies to the authors' collected feature data, annotations and metadata.
+Third-party materials retain their own rights and licenses. This grant does
+not assert ownership of original executable files or raw VirusTotal reports;
+neither is included. EMBER2024-derived reference inputs retain the upstream
+license and attribution; see THIRD_PARTY_NOTICES.md.

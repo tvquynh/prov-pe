@@ -1,0 +1,14 @@
+{
+  "path": "E:\\project_data\\COLLECTED_PE_779619_VT_DATASET\\paper_jisa_20260928\\major_revision_20260929_01\\candidate\\revision\\data\\relatedness_reference_digest_index.parquet",
+  "size_bytes": 354425492,
+  "sha256": "a1e9b3e41dedb042a65c883139dcbf266d500a42400bbe5b9840e3b497f9aea7",
+  "rows": 2882138,
+  "columns": [
+    "sha256",
+    "tlsh_canonical",
+    "source_split"
+  ],
+  "included_in_compact_zip": false,
+  "regeneration": "revision/code/exact_relatedness.py, using the identified official source manifests",
+  "scope": "Not needed for saved-score replay; required to independently repeat the complete no-neighbor search"
+}

@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-09-28T22:25:27.682280+00:00",
+  "threshold": 30,
+  "metric": "py-tlsh 5.0.0 diff including length",
+  "search": "Exact existence with header lower-bound pruning and nonnegative body early exit",
+  "source_scope": "All assessable canonical TLSH digests in official PE train, test and Challenge manifests",
+  "target_scope": "All primary rows, independent of collection source and label",
+  "no_approximation": true,
+  "witness": "first source within threshold, not minimum distance",
+  "code_sha256": "9bf4b5a79ed2f17288dede01b1773e2f29d02fdb41af2c9aeda618e2469d140e",
+  "software_test_seed": 17091
+}

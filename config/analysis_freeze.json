@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-09-28T03:39:48.346499+00:00",
+  "analysis_code_sha256": "6fa9f09f730ee94219b6e153d46c5276f8c444e304d3a0b18beb70a77c9aa877",
+  "near_extension_sha256": "37a25f75e2fc8049c9daca34b7e0fbd602ef50d0a8a7858b5a80011624f453c0",
+  "software_checks_sha256": "dd28a0a8f516de1ab42007487629bee1a291c4d8f95db98210c7048f6f06a8dc",
+  "no_external_metrics_computed_or_inspected": true,
+  "base_experiment_unchanged": "18b4196f644fe5072a860768f57081f6d4b0f0d50c1696f1268044f2667672a3",
+  "technical_correction_utc": "2026-09-28T04:01:20.917076+00:00",
+  "original_freeze_sha256": "12ee1510ae88ddd135a3548716d8fd75056c1cf141abf9ef4c264593ef83d484",
+  "technical_correction": "Pandas reserved accessor collision: group.sparse changed to group['sparse']. No metrics, cohorts, scores, thresholds or seeds changed. First aggregation had produced partial CSVs; no result-driven design change."
+}

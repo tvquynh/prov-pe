@@ -1,0 +1,12 @@
+{
+  "recorded_before_revision_fixture_comparisons": true,
+  "linear_absolute_logit_tolerance": 0.0001,
+  "linear_relative_tolerance": 0,
+  "linear_rationale": "Executed SGD uses float32 transformed inputs and model coefficients. Absolute logit tolerance accommodates small BLAS/batch accumulation differences. Every frozen threshold decision must still agree exactly.",
+  "source_absolute_probability_tolerance": 1e-12,
+  "source_relative_tolerance": 0,
+  "allowed_threshold_decision_changes": 0,
+  "integer_counts": "exact",
+  "metric_absolute_tolerance": 1e-12,
+  "original_primary_fixture_policy": "Unchanged; explicit numerical profile 1e-12, zero decision changes; all ten bitwise exact in the fresh local check."
+}

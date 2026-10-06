@@ -1,0 +1,13 @@
+{
+  "code_release": "PUBLIC",
+  "data_release": "PUBLISHED_OPEN_ACCESS",
+  "doi": "10.5281/zenodo.23157392",
+  "record_url": "https://zenodo.org/records/23157392",
+  "version": "2.0.0",
+  "publication_date": "2026-10-06",
+  "file_count": 11,
+  "total_size_bytes": 6281678424,
+  "anonymous_access_verified": "2026-10-06",
+  "checksum_verification": "All 11 published file sizes and MD5 checksums match the release; complete small-file downloads and ZIP byte-range downloads verified without authentication.",
+  "scientific_runs_executed_for_publication_sync": 0
+}

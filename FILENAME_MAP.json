@@ -1,0 +1,27 @@
+{
+  "dataset": "PROV-PE",
+  "branding_only": true,
+  "archives": {
+    "collected_pe_jsonl.zip": "PROV-PE_JSONL_v2.0.0.zip",
+    "collected_pe_parquet_metadata.zip": "PROV-PE_Parquet_Metadata_v2.0.0.zip",
+    "qualification_inputs.zip": "PROV-PE_Qualification_Inputs_v2.0.0.zip",
+    "research_artifact.zip": "PROV-PE_Research_Artifact_v2.0.0.zip"
+  },
+  "public_parquet_members": {
+    "collected_pe_ember_v3.parquet": "PROV-PE_features.parquet",
+    "sample_provenance.parquet": "PROV-PE_sample_provenance.parquet",
+    "target_manifest.parquet": "PROV-PE_target_manifest.parquet",
+    "historical_near_pair_ledger.parquet": "PROV-PE_historical_near_pair_ledger.parquet"
+  },
+  "release_documents": {
+    "README.md": "PROV-PE_README.md",
+    "DATA_CARD.md": "PROV-PE_DATA_CARD.md",
+    "CITATION.cff": "PROV-PE_CITATION.cff",
+    "LICENSE": "PROV-PE_LICENSE_CODE.txt",
+    "LICENSE-DATA.txt": "PROV-PE_LICENSE_DATA.txt",
+    "THIRD_PARTY_NOTICES.md": "PROV-PE_THIRD_PARTY_NOTICES.md",
+    "SHA256SUMS.txt": "PROV-PE_SHA256SUMS.txt"
+  },
+  "scientific_contents_changed": false,
+  "note": "Historical paths and script names remain unchanged. File-byte hashes identify the same data across names. Shards keep their numbered names for reader compatibility."
+}

@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-09-28T03:32:11.126037+00:00",
+  "role": "Outcome-blind additional sensitivity; original primary specification and original cohort masks retained",
+  "reason": "Historical benign master contains named source-neighbor references that were not exposed by the original compact review package",
+  "rule": "Exclude from primary only records whose historical named neighbor is in current pinned official PE source membership and whose independently recomputed TLSH distance is <=30. No searches selected by scores.",
+  "threshold_origin": "EMBER2024 author paper near-duplicate distance rule; candidate pairs are pre-existing historical metadata",
+  "scope": "Positive verification of named pairs. Missing candidate pairs do not establish absence of related files. Candidate-pair coverage is asymmetric by collection source.",
+  "training_unchanged": true,
+  "all_five_seeds_unchanged": true,
+  "no_target_performance_read_or_computed": true,
+  "base_experiment_sha256": "18b4196f644fe5072a860768f57081f6d4b0f0d50c1696f1268044f2667672a3",
+  "historical_master_sha256": "87f4e6f311b31487aabaa3005064240e0df0d9d9af61db83af77182047f61530",
+  "ledger_sha256": "a884eee22b39a36e1b5518dc745ffe26bb279b9ed4af7eb452fd21d16ff325fc",
+  "historically_flagged": 67357,
+  "reference_in_current_source": 67319,
+  "verified_le30_inventory": 67319,
+  "verified_nonidentical_le30_inventory": 67243,
+  "verified_le30_primary": 60522,
+  "retained_primary_label_counts": {
+    "1": 553140,
+    "0": 128611
+  },
+  "collection_snapshots": {
+    "2025-05": 220805
+  }
+}

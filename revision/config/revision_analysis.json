@@ -1,0 +1,179 @@
+{
+  "recorded_utc": "2026-09-28T22:18:44.417470+00:00",
+  "role": "POST_REVIEW_SUPPLEMENTARY_ANALYSES",
+  "prior_primary_outcomes_known": true,
+  "new_outcomes_not_read_at_specification": true,
+  "seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "cpu_only": true,
+  "threads": 32,
+  "max_new_fits": 10,
+  "inputs": {
+    "target_features": {
+      "path": "E:\\project_data\\COLLECTED_PE_779619_VT_DATASET\\paper_jisa_20260928\\completion_20260928\\cache\\target.npy",
+      "size": 7624628384,
+      "sha256": "0beb866d2ce2a01981410c699f87fe1ce77ffc01f64774876720e33300c382e2"
+    },
+    "source_train_features": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\99_SCRATCH\\study_a_v4r1_20260922\\official_feature_cache\\train.npy",
+      "size": 24036480128,
+      "sha256": "9e994af6dd40d1ec91df9caf4d49980e42b3f2c07836f294000f222ae812acad"
+    },
+    "source_test_features": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\99_SCRATCH\\study_a_v4r1_20260922\\official_feature_cache\\test.npy",
+      "size": 5546880128,
+      "sha256": "9e8514076f86a027a7dc7db051e81d37f1536d30b233e71d7790c77764aace0a"
+    },
+    "target_metadata": {
+      "path": "E:\\project_data\\COLLECTED_PE_779619_VT_DATASET\\paper_jisa_20260928\\completion_20260928\\data\\evaluation_manifest.parquet",
+      "size": 265544639,
+      "sha256": "002ea2cbd5203462da66354f99cec46e913ebe9613a83c30f7ad02a9afb2c374"
+    },
+    "source_train_metadata": {
+      "path": "E:\\project_data\\COLLECTED_PE_779619_VT_DATASET\\paper_jisa_20260928\\completion_20260928\\data\\evaluation_source_train.parquet",
+      "size": 515041981,
+      "sha256": "50eb7b3a13ccf40c00b494aae1f9ccb495904844e0d2d53c44c1c58e9b6af0bb"
+    },
+    "source_test_metadata": {
+      "path": "E:\\project_data\\COLLECTED_PE_779619_VT_DATASET\\paper_jisa_20260928\\completion_20260928\\data\\evaluation_source_test.parquet",
+      "size": 119050808,
+      "sha256": "f7a88d011833715a3daca9507e09157bc60211f039afdfb800635cf5b9a7a9d5"
+    },
+    "split_2026": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\02_RQ1_RELIABILITY_UNDER_SHIFT\\03_FINAL\\STUDY_A_FINAL_CANDIDATE_V4R1_OFFICIAL_EMBER2024_20260922\\data\\internal_split_2026.npz",
+      "size": 8360748,
+      "sha256": "de8642470f37e7c47837057d2b04e07d9be4c9f922344760e370548b84757e72"
+    },
+    "split_2027": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\02_RQ1_RELIABILITY_UNDER_SHIFT\\03_FINAL\\STUDY_A_FINAL_CANDIDATE_V4R1_OFFICIAL_EMBER2024_20260922\\data\\internal_split_2027.npz",
+      "size": 8360793,
+      "sha256": "1ba4dee528f9beff846a73910288980b6c09443ce3dd045305e3f10f3c565a64"
+    },
+    "split_2028": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\02_RQ1_RELIABILITY_UNDER_SHIFT\\03_FINAL\\STUDY_A_FINAL_CANDIDATE_V4R1_OFFICIAL_EMBER2024_20260922\\data\\internal_split_2028.npz",
+      "size": 8361288,
+      "sha256": "a45733a306374b46c71dcee2674cba04c0eea968c2797659e77c3f0637149eb0"
+    },
+    "split_2029": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\02_RQ1_RELIABILITY_UNDER_SHIFT\\03_FINAL\\STUDY_A_FINAL_CANDIDATE_V4R1_OFFICIAL_EMBER2024_20260922\\data\\internal_split_2029.npz",
+      "size": 8360620,
+      "sha256": "c4d68240183fa28a1be402cc6f1654db87b210c6d3a1990f2a1fa6529782426c"
+    },
+    "split_2030": {
+      "path": "E:\\phd\\EVASIVE_MALWARE_RELIABILITY_THESIS\\02_RQ1_RELIABILITY_UNDER_SHIFT\\03_FINAL\\STUDY_A_FINAL_CANDIDATE_V4R1_OFFICIAL_EMBER2024_20260922\\data\\internal_split_2030.npz",
+      "size": 8361526,
+      "sha256": "c03126883c758bd83c62243863f26edf1c5d13a2800453177ebeaec3594cbace"
+    }
+  },
+  "feature_prefix": 2480,
+  "categorical_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    701,
+    702
+  ],
+  "source_diagnostic": {
+    "learner": "LightGBM",
+    "positive_source": "mb_malware_candidate",
+    "group_split": "SHA256(seed|canonical_TLSH) modulo 1000; <600 train, 600-799 validation, >=800 test",
+    "parameters": "original fixed 500-round binary configuration, CPU32, experimental seeds substituted",
+    "decision_threshold": 0.5,
+    "no_early_stopping": true,
+    "report": [
+      "overall",
+      "within_VT_label_0",
+      "within_VT_label_1"
+    ],
+    "interpretation": "Source separability only; within-label test metrics do not turn pooled-source training into causal identification"
+  },
+  "common_support": {
+    "strata": [
+      "VT_label",
+      "file_type",
+      "is_dll",
+      "size_bin"
+    ],
+    "size_edges_bytes": [
+      65536,
+      262144,
+      1048576,
+      4194304
+    ],
+    "min_per_source_per_label_cell": 20,
+    "method": "within each label, weight each source equally and each cell proportional to min(source counts); fixed saved malware scores and thresholds",
+    "preserve_natural_primary": true
+  },
+  "label_sensitivity": {
+    "positive_minima": [
+      5,
+      10,
+      15
+    ],
+    "count_bins": [
+      "5-9",
+      "10-14",
+      "15-29",
+      "30+"
+    ],
+    "negative_rule": "malicious_count == 0 unchanged",
+    "report_age_edges_days": [
+      30,
+      365
+    ],
+    "no_ratio_relabeling": "engine independence/coverage not established",
+    "no_retraining": true
+  },
+  "linear_reference": {
+    "estimator": "sklearn.linear_model.SGDClassifier",
+    "loss": "log_loss",
+    "penalty": "l2",
+    "alpha": 0.0001,
+    "max_iter": 50,
+    "tol": 0.0001,
+    "n_iter_no_change": 5,
+    "shuffle": true,
+    "average": true,
+    "learning_rate": "optimal",
+    "early_stopping": false,
+    "preprocessing": "signed log1p then StandardScaler on 2473 noncategorical columns; OneHotEncoder(handle_unknown=ignore) on 7 categorical columns; fit only source fitting partition",
+    "split": "same saved EMBER2024 90/10 source splits as primary",
+    "thresholds": [
+      0.01,
+      0.001
+    ],
+    "no_HPO": true,
+    "nonconvergence": "report budget exhaustion honestly; no automatic alternative fit"
+  },
+  "summaries": "all five seeds, mean and sample SD ddof=1, no p-values or bootstrap",
+  "public_release": "DEFERRED_BY_AUTHOR_NOT_BLOCKING",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "packages": {
+      "numpy": "2.4.5",
+      "pandas": "3.0.3",
+      "pyarrow": "24.0.0",
+      "scikit-learn": "1.8.0",
+      "lightgbm": "4.6.0",
+      "scipy": "1.17.1",
+      "py-tlsh": "5.0.0"
+    }
+  },
+  "prepared_data_hashes": {
+    "common_support_cell_counts.csv": "64e872d0d8cbfe4d64a1b5ae7432456a89978efe56cf5b05ed59e98af8917192",
+    "revision_target_metadata.parquet": "7319546b81eef31103c3ed6b2f5a25cdf7145ca3e2cf4db8b58741ab56a24312",
+    "source_diagnostic_split_2026.npy": "09928aface27a521345d1c62a0beada965295c1f6b543352edd0944cd19e510f",
+    "source_diagnostic_split_2027.npy": "5c822966b811ac8879bdf50dca69f22ffd2a410d033b19b7912c4cd2326c5e90",
+    "source_diagnostic_split_2028.npy": "920a9c99f2648d17fcb7fb956f47d11b758625dee8b9f0e6f654378f35644047",
+    "source_diagnostic_split_2029.npy": "f0627abed530a5a7a3f486e8614880407e5a48dd6d10b7e160927afc3494c006",
+    "source_diagnostic_split_2030.npy": "897690d5e774ace6c96ca6823cda3fd948269e6c47d4e31af4bcfeb78fc70316"
+  }
+}
